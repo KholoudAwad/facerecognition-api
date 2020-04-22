@@ -1,9 +1,12 @@
 {
   "name": "facerecognition-api",
+  "homepage": "https://kholoudawad.github.io/facerecognition-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "nodemon server.js"
   },
   "author": "",
@@ -15,6 +18,7 @@
     "bcrypt-nodejs": "0.0.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "gh-pages": "^2.2.0",
     "knex": "^0.21.0",
     "pg": "^8.0.2"
   }
